@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#canvas1{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Normal ++</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="menu-logo">
+                <img id="menu" src="menu.png" alt="">
+                <img id="logo" src="logo.png" alt="">
+            </div>
+
+            <div class="navbar">
+                <a href="#" target="_blank">Latest</a>
+                <a href="#" target="_blank">Modern</a>
+                <a href="#" target="_blank">Contemporary</a>
+                <a href="#" target="_blank">Affordable</a>
+                <button class="check">click me</button>
+                <input type="checkbox" data-bnt  >
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <section class="img">
+            <div class="lamp">
+                <img src="lamp.png" alt="" height="80px">
+            </div>
+
+            <div class="light">
+                <img src="light.png" alt="" data-light height="80px" class="off" class="on" id="light">
+            </div>
+        </section>
+        
+
+
+
+        <span class="article">
+
+            <div class="title">
+                <h1>Latest <br>in Lighting</h1>
+            </div>
+
+            <div class="para">
+                <p>This is the first lamp from our company. we're making a huge collection of <br>
+                modern Lamps in all categories from home use to office use.
+                </p>
+            </div>
+
+            <div class="button">
+                <button>Check All Collections</button>
+            </div>
+
+        </span>
+
+        <section class="range">
+            <p id="p1">04</p>
+            <div class="cadre"><div class="line"></div></div>
+            <p id="p2">05</p>
+        </section>  
+
+    </main>
+
+<script>
+    const light = document.querySelector("[data-light]");
+    const nsila = document.querySelector('[data-bnt]')
+    
+    nsila.addEventListener('click',e=>{
+
+        light.classList.toggle("on");
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+          < Nombre_entier_estentier >
+
+Procédure EstEntier(num:entier) faire
+Var Tableau:t[2]:entier
+    num,x,y;entier
+Début
+|    Pour y de 1 à num faire
+|    |    x <-- num
+|    |   TantQue (not(x Mod y = 0)) faire
+|    |   |   r <-- x Mod y
+|    |   |   x <-- y
+|    |   |   y <-- r
+|    |   FinTantQue
+|    |   Si y = 1 faire
+|    |   |     t[1] <-- 1
+|    |   SinonSi y = num faire
+|    |   |     t:insert(1,num)
+|    |   Sinon
+|    |   |     t:append(y)
+|    |   FinSi
+|    FinPour
+|
+|    Si len(t)=2 :
+|    |     Ecrire("Le nombre ",num,"est Premier")
+|    Sinon
+|    |     Ecrire("!! Le nombre ",num,"n'est pas Premier !!")
+|    FinSi
+Fin
+FinProcédure
+
+
+Var x,num:entier
+Début
+|    Répéter
+|    |    Ecrire("Entrer le nombre : ")
+|    |    Lire(x)
+|    |    num <-- x
+|    Jusqu à x > 0 
+Fin
+
+EstEntier(num:entier)
+
+        

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <form class="w-50">
+        <br>
+        <div class="form-group">
+            <label class="form-label">Nom</label>
+            <input class="form-control border border-2 border-dark" type="text" id="nom">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Prenom</label>
+            <input class="form-control border border-2 border-dark" type="text" id="prenom">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">AVATAR</label>
+            <input class="form-control border border-2 border-dark" type="file" id="avatar">
+        </div>
+        <br>
+    </form>
+
+    <button class="btn btn-primary" onclick="repeat()">Ajouter</button>
+    
+    <table class="table table-bordered table-dark" id="table">
+        <thead>
+            <tr>
+                <td>Nom</td>
+                <td>Prenom</td>
+                <td>AVATAR</td>
+                <td>Supprimer</td>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <script>
+        function repeat(){
+            let nom = document.getElementById("nom").value;
+            let prenom = document.getElementById("prenom").value;
+            let tbody = document.getElementById("tbody");
+            const row = tbody.insertRow(-1);
+            let col1 = row.insertCell(0);
+            let col2 = row.insertCell(1);
+            let col3 = row.insertCell(2);
+            let col4 = row.insertCell(3);
+            let imgObj = document.getElementById("avatar").files[0];
+            let url = URL.createObjectURL(img);
+        }
+    </script>
+
+</body>
+</html>

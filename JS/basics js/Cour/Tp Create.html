@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+
+    <script>
+
+        d1 = document.getElementById('d1') ;
+        titre = document.createElement('h1') ;
+        titre.innerHTML = "Welcome" ;
+        d1.appendChild(titre) ;
+
+        d2 = document.getElementById('d2') ;
+        para = document.createElement('p') ;
+        para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quos?" ;
+        d2.appendChild(para) ;
+
+        d3 = document.getElementById('d3') ;
+        img = document.createElement('img') ;
+        img.src = 'gojo.gif' ;
+        d3.appendChild(img) ;
+
+    </script>
+
+</body>
+</html>

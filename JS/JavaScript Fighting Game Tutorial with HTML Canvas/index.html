@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JavaScript Fighting Game</title>
+  </head>
+  <body style="background-color: #222">
+    <div class="main-container">
+      <div class="header-container">
+        <!-- player health -->
+        <div
+          style="
+            position: relative;
+            border: 4px solid white;
+            border-right: none;
+            border-bottom-left-radius: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+          "
+        >
+          <div class="player-health"></div>
+          <div id="playerHealth" class="player-bar"></div>
+        </div>
+        <!-- timer -->
+        <div id="timer" class="timer">10</div>
+        <!-- enemy health -->
+        <div
+          style="
+            position: relative;
+            width: 100%;
+            border: 4px solid white;
+            border-left: none;
+            border-bottom-right-radius: 100px;
+            overflow: hidden;
+          "
+        >
+          <div class="enemy-health"></div>
+          <div id="enemyHealth" class="enemy-bar"></div>
+        </div>
+      </div>
+      <div id="result">
+        <span id="comment">Tie</span>
+        <button>Restart</button>
+      </div>
+      <canvas id="canvas"></canvas>
+      
+    </div>
+    
+    <audio
+    src="./music//y2mate.bz - matteo-panama-lyrics-tiktok-remix.mp3"
+    loop
+    ></audio>
+    
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

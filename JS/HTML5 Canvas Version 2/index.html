@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML5 Canvas and JavaScript Game</title>
+  </head>
+  <body>
+    <div class="scoreBox">
+      <span>Score: </span>
+      <span id="score">0</span>
+    </div>
+
+    <div id="modalEl" class="resultContainer1">
+      <div class="resultContainer2">
+        <div id="resultBox" class="hidden">
+          <h1 id="result">0</h1>
+          <p>Points</p>
+        </div>
+        <div class="containerStart">
+          <button id="startGameEl" class="startBtn">Start Game</button>
+        </div>
+      </div>
+    </div>
+
+    <canvas></canvas>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/classes/Player.js"></script>
+    <script src="./js/classes/Projectile.js"></script>
+    <script src="./js/classes/Enemy.js"></script>
+    <script src="./js/classes/Particle.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

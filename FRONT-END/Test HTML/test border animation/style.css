@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(3, 3, 55);
+}
+
+.box{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color:  rgb(14, 18, 39);
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    transition: all 800ms;
+}
+
+.box:hover{
+    cursor: pointer;
+    
+    box-shadow:  0 0 5px rgb(0, 251, 255),
+    0 0 15px rgb(0, 251, 255),
+    0 0 25px rgb(0, 251, 255);
+}
+
+.box:active{
+    height: 570px;
+    width: 470px;
+    transform: rotate(-1000deg);
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(255, 0, 0),rgb(255, 238, 0),rgb(34, 255, 0),greenyellow);
+    animation: animate 4s linear infinite;
+    animation-delay: -1s;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    background-image: linear-gradient(transparent,transparent,transparent,rgb(0, 247, 255),rgb(0, 17, 255),rgb(157, 0, 255),rgb(200, 0, 255));
+    animation: animate 4s linear infinite;
+    animation-delay: -s;
+}
+@keyframes animate{
+    0%{
+            transform: rotate(0deg);
+            
+    }
+    100%{
+            transform: rotate(360deg);
+            
+    }
+
+}
+.block{
+    z-index: 1;
+    background-color: rgb(1, 8, 31);
+    inset: 5px;
+    border-radius: 15px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3;
+}
+h1{
+    color: rgb(255, 161, 47);
+    transition: all 400ms;
+}
+h1:hover{
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 2px 5px 40px rgb(255, 165, 47),
+    2px 5px 40px rgb(255, 241, 47),
+    2px 2px 40px rgb(255, 220, 47),
+    2px 2px 30px rgb(255, 231, 47),
+    2px 2px 30px rgb(255, 200, 47);
+    
+}
+
+h2{
+    color: greenyellow;
+    transition: all 400ms;
+}
+h2:hover{
+    text-shadow: 2px 5px 40px greenyellow,
+    2px 5px 40px greenyellow,
+    2px 2px 40px greenyellow,
+    2px 2px 30px greenyellow,
+    2px 2px 30px greenyellow;
+}
+
+h3{
+    color: rgb(0, 255, 255);
+    transition: all 400ms;
+}
+h3:hover{
+    text-shadow: 2px 5px 40px rgb(0, 255, 255),
+    2px 5px 40px rgb(0, 255, 255),
+    2px 2px 40px rgb(0, 255, 255),
+    2px 2px 30px rgb(0, 255, 255),
+    2px 2px 30px rgb(0, 255, 255);
+}
+
+h4{
+    color: rgb(210, 47, 255);
+    transition: all 400ms;
+}
+h4:hover{
+    text-shadow: 2px 5px 40px rgb(210, 47, 255),
+    2px 5px 40px rgb(210, 47, 255),
+    2px 2px 40px rgb(210, 47, 255),
+    2px 2px 30px rgb(210, 47, 255),
+    2px 2px 30px rgb(210, 47, 255);
+}
+.button{
+    transform: translateY(40px);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: solid rgb(255, 255, 255);
+    border-radius: 90px;
+    height: 150px;
+    width: 150px;
+    transition: all 1s;
+}
+.button:hover{
+    cursor: pointer;
+}
+.button:active{
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    /*transform: translateY(-10px);*/
+    border-radius: 70px;
+    height: 110px;
+    width: 110px;
+}

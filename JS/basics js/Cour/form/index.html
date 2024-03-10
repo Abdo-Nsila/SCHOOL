@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Saisir les informations du client</h1>
+
+    <form action="" class="w-50 d-flex justify-content-center align-items-center flex-column rounded-3">
+        <div class="w-75 form-group">
+            <label class="form-label">Nom</label>
+            <input type="text" class="border border-2 border-dark form-control" id="nom">
+            <span class="text-danger" id="ernom"></span>
+        </div>
+        <div class="w-75 form-group">
+            <label class="form-label">Prénom</label>
+            <input type="text" class="border border-2 border-dark form-control" id="prenom">
+            <span class="text-danger" id="erprenom"></span>
+        </div>
+        <div class="w-75 form-group">
+            <label class="form-label">Ville</label>
+            <select class="form-select border border-2 border-dark" id="ville">
+                <option value="Marrackech">Marrackech</option>
+                <option value="Agadir">Agadir</option>
+                <option value="Rabat">Rabat</option>
+            </select>
+        </div>
+
+        <hr>
+        <div class=" w-75 d-flex justify-content-center">
+            <label class="w-100 form-label">Choisir le type</label>
+            <div class="w-100 form-check">
+                <input type="radio" class="form-check-input" name="type" id="f" >
+                <label class="form-check-label">Fournisseur</label>
+            </div>
+            <div class="w-100 form-check">
+                <input type="radio" class="form-check-input" name="type" checked>
+                <label class="form-check-label">Client</label>
+            </div>
+        </div>
+    </form>
+    <hr>
+
+    <div class="w-50 form-group d-flex justify-content-around">
+        <button class="btn btn-success" onclick="ajouter()">Ajouter</button>
+        <button class="btn btn-warning" onclick="initialiser()">Initialiser</button>
+        <button class="btn btn-primary" onclick="imprimer()">Imprimer</button>
+    </div>
+    <hr>
+
+
+    <table class="table table-bordered table-danger rounded-3 table-hover w-50">
+        <thead>
+            <tr>
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Ville</td>
+                <td>Type</td>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+
+    <script>
+
+        function scan_nom(nom){
+            text = document.getElementById('ernom') ;
+            if(nom!=""){
+                text.innerHTML = '' ;
+                return true ;
+            }
+            else{
+                text.innerHTML = 'Veuillez saisir le nom' ;
+                return false ;
+            }
+        }
+        function scan_prenom(prenom){
+            text = document.getElementById('erprenom') ;
+            if(prenom!=""){
+                text.innerHTML = '' ;
+                return true ;
+            }
+            else{
+                text.innerHTML = 'Veuillez saisir le prenom' ;
+                return false ;
+            }
+        }
+
+        function ajouter(){
+            nom = document.getElementById('nom').value ;
+            prenom = document.getElementById('prenom').value ;
+            ville = document.getElementById('ville').value ;
+            if(document.getElementById('f').checked){
+                type = 'Fournisseur' ;
+            }
+            else{
+                type = 'Client' ;
+            }
+
+            scan1 = scan_nom(nom) ;
+            scan2 = scan_prenom(prenom) ;
+            console.log(scan1) ;
+            console.log(scan2) ;
+            if(scan1 && scan2){
+                const tbody = document.getElementById('tbody') ;
+                const row = tbody.insertRow(-1) ;
+
+                const col1 = row.insertCell(0) ;
+                const col2 = row.insertCell(1) ;
+                const col3 = row.insertCell(2) ;
+                const col4 = row.insertCell(3) ;
+
+                col1.innerHTML = nom ;
+                col2.innerHTML = prenom ;
+                col3.innerHTML = ville ;
+                col4.innerHTML = type ;
+            }
+        }
+
+        function initialiser(){
+            window.location.reload() ;
+        }
+
+        function imprimer(){
+            window.print() ;
+        }
+    </script>
+
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(./favicon.png);
+            background-position: center;
+            color: white;
+        }
+    </style>
+
+</body>
+</html>

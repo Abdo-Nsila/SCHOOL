@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Soisir Votre article : </h1>
+    <button onclick="saisir()">Editer Facture</button>
+    
+    <script>
+        function saisir(){
+            code = prompt("Code Article : ") ;
+            libelle = prompt("Libelle  : ") ;
+            quantite = prompt("Quantite : ") ;
+            prix_uni = prompt("Prix Unitaire : ") ;
+            tauxTVA = prompt("Taux TVA : ") ;
+            document.write("<button onclick='afficher()''>Afficher</button>")
+        }
+        function afficher(){
+            total_HT = quantite * prix_uni ;
+            mantant_TVA =  total_HT * tauxTVA ;
+            total_TTC = total_HT + mantant_TVA ;
+
+            table = `
+            <table border=2 class="table table-dark">
+                <tr>
+                    <td>Home</td>
+                    <td>Home</td>
+                    <td>Home</td>
+                </tr>
+            </table>`;
+            document.write(table) ;
+
+            document.write(`<h2>Code Aticle  : <i>${code}</i></h2>`);
+            document.write(`<h2>Libelle : <i>${libelle}</i></h2>`);
+            document.write(`<h2>Quantite : <i>${quantite}</i></h2>`);
+            document.write(`<h2>Prix Unitaire : <i>${prix_uni}</i></h2>`);
+            document.write(`<h2>Taux TVA : <i>${tauxTVA}</i></h2>`);
+
+            document.write(`<h2>Total_HT : <i>${total_HT}</i></h2>`);
+            document.write(`<h2>Mantant_TVA : <i>${mantant_TVA}</i></h2>`);
+            document.write(`<h2>Total_TTC : <i>${total_TTC}</i></h2>`);
+        }
+    </script>
+
+</body>
+</html>

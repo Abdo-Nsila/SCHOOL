@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center border border-3 border-primary">Les colonnes en Formulaire</h1>
+        <form action="" method="post">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                            <span class="input-group-text"><img src="padlock.png" alt="" height="30px"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="user.png" alt="" height="30px"></span>
+                            <input type="text" placeholder="CIN" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="form-group">
+                        <label for="l">Pays</label>
+                        <input type="text" id="l" list="v" class="form-control">
+                        <datalist id="v">
+                            <option value="Maroc"></option>
+                            <option value="Canada"></option>
+                            <option value="Egypt"></option>
+                            <option value="Japon"></option>
+                        </datalist>
+                    </div>
+                    <hr>
+                
+                    <input type="text"class="form-control" placeholder="Normal input">
+                    <input type="text" class="form-control" placeholder="Disabled input" disabled> 
+                    <input type="text" class="form-control" placeholder="Readonly input" readonly>
+                    <input type="text" class="form-control-plaintext" placeholder="Plaintext input"> 
+                    <input type="text" class="form-control" placeholder="Normal input">
+                    <hr>
+
+                </div>
+        
+                <input type="color" class="form-control form-control-color" value="#CCCCCC">
+                <hr>
+                <button class="btn btn-primary w-100" type="submit">Valider</button>
+        </form>
+    </div>
+
+
+
+    </div>
+</body>
+</html>

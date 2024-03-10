@@ -1,0 +1,13 @@
+.img{
+    position: absolute;
+    right:50px;
+    top: 350px;
+}
+h1{
+    text-align: center;
+}
+
+.img img{
+    box-shadow: 15px -15px 25px 10px rgb(90, 238, 255);
+    border: 5px solid rgb(0, 179, 255);
+}

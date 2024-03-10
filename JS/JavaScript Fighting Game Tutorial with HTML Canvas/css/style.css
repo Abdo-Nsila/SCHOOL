@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  scale: 0.8;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 88%;
+  padding: 20px;
+}
+
+.player-health,
+.enemy-health {
+  background-color: #ff2828;
+  height: 30px;
+  width: 100% !important;
+}
+.player-health{
+  border-bottom-left-radius: 100px;
+}
+.enemy-health{
+  border-bottom-right-radius: 100px;
+}
+
+.player-bar,
+.enemy-bar {
+  background-color: #23ff5e;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.player-bar {
+  width: 100%;
+  /* border-bottom-left-radius: 100px; */
+}
+.enemy-bar {
+  left: 0;
+  /* border-bottom-right-radius: 100px; */
+}
+
+.timer {
+  background-color: #785a47d7;
+  color: white;
+  border: 4px solid white;
+  height: 70px;
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#result {
+  z-index: 100;
+  position: absolute;
+  background-color: #766b506e;
+  background-color: #00000095;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: none;
+}
+#result button{
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  background-color: #7057ffd0;
+  color: white;
+  border: 2px solid black;
+}
+
+/* button{
+  position: absolute;
+} */

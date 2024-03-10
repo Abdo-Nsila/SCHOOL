@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+nav {
+    height: 50px;
+    background-color: green;
+}
+
+nav a{
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    float: left;
+    width: 45%;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    background-image: linear-gradient(90deg,white,green);
+    /* box-shadow: 10px 10px 10px 10px gray; */
+}                                                                                                                                          
+
+aside{
+    float: right;
+    width: 45%;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    background-image: linear-gradient(90deg,white,green);
+}
+
+
+footer{
+    clear: both;
+    height: 40px;
+    color: white;
+    background-color: green;
+}

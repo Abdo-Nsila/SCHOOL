@@ -1,0 +1,117 @@
+* , *::after , *::before{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 150px;
+    background-color: transparent;
+}
+header h1{
+    float: left;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+header nav{
+    float: right;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+}
+header nav a{
+    display: inline-block;
+    margin: 40px 15px;
+    font-size: 20px;
+}
+
+.all{
+    height: 500px;
+    background-color: brown;
+}
+.all main{
+    height: 100%;
+    background-color: transparent;
+    float: left;
+    width: 70%;
+}
+.all main .image{
+    background-size: cover;
+    height: 100%;
+    background-color: transparent;
+    float: left;
+    width: 40%;
+}
+.all main .info{
+
+    height: 100%;
+    background-color: peru;
+    float: right;
+    width: 60%;
+}
+.all main .info h1{
+    margin-top: 160px;
+}
+.all main .info h3{
+    margin-top: 5px;
+}
+.info .dashed li{
+    list-style: none;
+}
+.info .dashed li::before{
+    content: '\002D\0020';
+}
+
+.all aside{
+    height: 100%;
+    background-color: transparent;
+    float: right;
+    width: 30%;
+}
+.all::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+aside img{
+    width: 50px;
+    float: left;
+}
+aside section{
+    float: left;
+}
+aside ul li{
+    list-style: none;
+    margin:50px 5px;
+}
+aside ul li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.link{
+    color: royalblue;
+    transition: all 200ms;
+}
+.link:hover{
+    transition: all 200ms;
+    color: green;
+    font-size: 20px;
+}
+
+
+footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+
+
+/* ------------------header-------------------- */
+header{
+    height: 200px;
+    width: 98%;
+    background-color: rgb(225, 7, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    border-radius: 10px;
+}
+header img{
+    height: 70px;
+    margin-right: 1%;
+}
+header h1{
+    margin-top: -1%;
+}
+.logo{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+header nav{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+header nav{
+    display: flex;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 600ms;
+    background-color: black;
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+}
+header nav a:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+/* -----------main-------------- */
+
+main{
+    background-color: transparent;
+    width: 100%;
+    height: 63vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.video{
+    background-color: transparent;    
+    height: 100%;
+    width: 38%;
+}
+.vide video{
+    height: 80%;
+    width: 100%;
+}
+
+.info{
+    background-color: transparent;
+    height: 70%;
+    width: 35%;
+}
+.description{
+    height: 80%;
+    border: 2px solid black;
+    text-align: justify;
+}
+.first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first label{
+    margin-right: 3%;
+}
+.second{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.second label{
+    margin-right: 5%;
+}
+.three{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.three label{
+    margin-right: 4%;
+}
+.click{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.click button{
+    margin-top: 3%;
+    height: 45px;
+    width: 49%;
+    font-weight: 500;
+    background-color: rgb(255, 94, 25);
+    border: 2px solid rgb(255, 94, 25);
+    border-radius: 50px;
+}
+
+
+.link{
+    background-color: rgb(255, 174, 45);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.list-link{
+    background-color: transparent;
+    height: 65%;
+}
+.link h1{
+    font-size: 30px;
+}
+.list-link ol li a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* --------------------footer----------------------- */
+
+ footer{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(255, 90, 20);
+    margin-top: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }

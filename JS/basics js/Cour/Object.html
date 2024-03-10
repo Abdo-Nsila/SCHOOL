@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="infinieCall(1)">Start+</button>
+    <button onclick="infinieCall(-1)">Start-</button>
+    <button onclick="stop()">Stop</button>
+    <h1 id="num"></h1>
+
+    <script>
+
+        class Car {
+            constructor(name,color,date){
+                this.name = name ;
+                this.color = color ;
+                this.date = date;
+            }
+
+            getInfo() {
+                return `Car Name: ${this.name}  Car Color: ${this.color}  Date Car: ${this.date}` ;
+            }
+        } ;
+
+        car1 = new Car("BMW","BLACK",Date()) ;
+        console.log(car1.getInfo()) ;
+        var n = 0 ;
+        function plus(){
+            n += 1 ;
+            window.document.getElementById('num').innerHTML = n ;
+            // window.open("http://le3zawa.somee.com/","Youtube","_blank","height=400","width=300")
+        }
+        function sub(){
+            n -= 1 ;
+            window.document.getElementById('num').innerHTML = n ;
+            // window.open("http://le3zawa.somee.com/","Youtube","_blank","height=400","width=300")
+        }
+        var interval1 ;
+        var interval2 ;
+        function infinieCall(n){
+            if (n==1){
+                window.clearInterval(interval2) ;
+                interval1=window.setInterval(plus,10) ;
+            }
+            else{
+                window.clearInterval(interval1) ;
+                interval2=window.setInterval(sub,10) ;
+            }
+        }
+        function stop(){
+            window.clearInterval(interval1) ;
+            window.clearInterval(interval2) ;
+        }
+
+    </script>
+
+</body>
+</html>

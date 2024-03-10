@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    background-color: blueviolet;
+}
+
+.container{
+    display:  grid;
+    
+    gap: 10px;
+    width: 80%;
+    margin: 20px;
+    padding: 5px;
+    border: 2px dashed white;
+    /*grid-template-columns: 1fr 2fr 1fr ;  
+    grid-template-rows: 4fr 300px;
+    grid-auto-rows: 1fr;*/    
+    
+
+
+    /* grid-template-columns: 1fr auto 1fr ;
+    grid-template-rows: auto 100px; */
+
+
+
+    grid-template-columns: repeat(2,1fr auto ) 4fr;
+
+} 
+
+
+.child{
+    background-color: orange;
+}

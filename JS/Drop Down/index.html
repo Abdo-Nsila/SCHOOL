@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    Name: <input type="text" id="name" name="name"/>
+    <h1 id="text"></h1>
+    <button onclick="display()">Display</button>
+    <button onclick="modifier()">Modifier</button>
+
+    <script>
+        // method 1
+        function display(){
+            confirm(`Voulez vous Afficher ${document.getElementById("name").value}`) ;
+            document.getElementById('text').innerHTML = document.getElementById("name").value ;
+        }
+        function modifier(){
+            name = prompt('Modifier votre nom :') ;
+            document.getElementById('text').innerHTML = name ;
+        }
+
+
+
+
+
+
+
+        
+        // method 2
+        // const name = document.querySelector("#name").value;
+        // console.log(name)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+#author {
+  color: red;
+}
+
+/* #author {
+  color: pink;
+} */
+.author {
+  color: green;
+}
+/*
+.author {
+  color: blue;
+} */
+
+p:first-child {
+  color: yellow;
+}
+
+p {
+  color: gray;
+}

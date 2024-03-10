@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(36, 36, 56);
+}
+
+.main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 8, 35);
+    height: 650px;
+    width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 1s;
+}
+.main:hover{
+    cursor:pointer;
+}
+.main:active{
+    cursor:pointer;
+    box-shadow: 0 0 5px rgb(0, 255, 251),
+    0 0 10px rgb(0, 255, 251),
+    0 0 20px rgb(0, 255, 251),
+    0 0 25px rgb(0, 255, 251);
+}
+.main::after{
+    content: '';
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(255, 255, 255));
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+.main::before{
+    content: '';
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(255, 255, 255));
+    animation: animate 4s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.section{
+    z-index: 1;
+    background-color: rgb(8, 8, 35);
+    inset: 4px;
+    border-radius: 15px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3;
+}
+.text{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 1s;
+}
+.text:hover{
+    cursor:pointer;
+    text-shadow: 0 0 5px white,
+    0 0 10px white,
+    0 0 20px white,
+    0 0 25px white;
+}
+.div1{
+    height: 50px;
+    
+}
+.div2{
+    height: 100px;
+    
+}
+input{
+    text-align:center;
+    text-decoration: underline;
+    margin-top: 10px;
+    width: 280px;
+    height: 12px;
+    border: none;
+    border-radius: 1px;
+    transition: all 400ms;
+}
+input:hover{
+    padding-top: 35px;
+    border-radius: 4px;
+    background-color: aqua;
+}

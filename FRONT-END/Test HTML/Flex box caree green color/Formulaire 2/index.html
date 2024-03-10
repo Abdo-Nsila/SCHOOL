@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire 2</title>
+</head>
+
+<body>
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend>
+            <h1>Formulaire 2</h1>
+        </legend>
+        <p>
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" list="v" />
+            <datalist id="v">
+                <option>Marrakech</option>
+                <option>Rabat</option>
+                <option>Agadir</option>
+            </datalist>
+        </p>
+
+        <label for="couleur">Choisir couleur</label>
+        <input type="color" id="couleur" /><br /><br />
+
+        <label>Introducte tourself :</label><textarea cols="50" rows="10"></textarea><br /><br />
+        <label>Male</label><input type="radio" name="sexe" /> 
+        <label>Famale</label><input type="radio" name="sexe" /><br /><br /><br />
+        <h2>Favorite</h2>
+        <label>Study</label><input type="checkbox" name="favorite" />
+        <label>Voyage</label><input type="checkbox" name="favorite" />
+        <label>Play</label><input type="checkbox" name="favorite" /><br /><br /><br />
+        <label for="pays">Pays</label>
+        <select id="pays">
+            <optgroup label="AFRIQUE">
+                <option>Maroc</option>
+                <option>Egypt</option>
+            </optgroup>
+            <optgroup label="ASIA">
+                <option>Arabic-Saudi</option>
+                <option>Palestine</option>
+            </optgroup>
+            <optgroup label="America">
+                <option>Canada</option>
+                <option>USA</option>
+            </optgroup>
+        </select><br /><br /><br /><br />
+        <label>Week :</label><input type="week" style="margin: 0 75px" /><br /><br />
+        <label>Local-Time</label><input type="datetime-local" /><br /><br />
+        <label>Month</label><input type="month" style="margin: 0 75px" /><br /><br />
+    </fieldset>
+</body>
+
+</html>

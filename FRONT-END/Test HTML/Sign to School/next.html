@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="next.css">
+    <title>Sign-UP</title>
+</head>
+<body>
+    <header>
+        <img class="img0" src="ecrire.gif" alt="" height="180px">
+        <h1>Complete This Form</h1>
+    </header>
+
+    <main>
+        <div class="step1">
+            <form action="" method="post" class="form">
+                <fieldset style="border: none;">
+                    <label>Introducte yourself :</label><textarea cols="50" rows="10"></textarea><br><br><br><br>
+                    <label>Male</label><input type="radio" name="sexe">   <label>Famale</label><input type="radio" name="sexe"><br><br><br><br>
+                    <h2>Favorite subject :</h2><br>
+                    <label>Maths</label><input type="checkbox" name="favorite">
+                    <label>Programing</label><input type="checkbox" name="favorite">
+                    <label>Arabic</label><input type="checkbox" name="favorite"><br><br><br><br>
+                    <label for="pays">Pays</label>
+                    <select id="pays">
+                        <optgroup label="AFRIQUE">
+                            <option>Maroc</option>
+                            <option>Egypt</option>
+                        </optgroup>
+                        <optgroup label="ASIA">
+                            <option>Arabic-Saudi</option>
+                            <option>Palestine</option>
+                        </optgroup>
+                        <optgroup label="America">
+                            <option>Canada</option>
+                            <option>USA</option>
+                        </optgroup>
+                    </select><br><br><br><br>
+                    <label>Week :</label><input type="week" style="margin: 0 75px;"><br><br><br><br>
+                    <label>Local-Time</label><input type="datetime-local"><br><br><br><br>
+                    <label>Month</label><input type="month" style="margin: 0 75px;"><br><br><br><br>
+                </fieldset>
+                <div class="ok">
+                    <button class="button"><a href="sign.html">Previous</a></button>
+                    <input type="reset" value="reset" class="button">
+                    <button class="button" style="padding:18px 55px;"><a href="index.html">Finish</a></button>
+                    
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

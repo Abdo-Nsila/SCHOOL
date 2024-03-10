@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="text-center border border-3 border-primary">Formulaire-Bootstrap</h1>
+    <form action="" method="post">
+        <div class="form-group">
+            <label class="form-label" for="n">UserName</label>
+            <input class="form-control border-2 border-dark" type="text" id="n" name="n" placeholder="username">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="form-label" for="p">Password</label>
+            <input class="form-control border-2 border-dark" type="password" id="p" name="p" placeholder="password">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label for="id">CIN</label>
+            <input class="form-control border-2 border-dark" type="text" id="id" name="cin" placeholder="CIN">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="form-label" for="g">Email</label>
+            <input class="form-control border-2 border-dark" type="email" id="g" name="g" placeholder="email">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="form-label" for="dn">Date de Naissance</label>
+            <input class="form-control border-2 border-dark" type="date" id="dn" name="date">
+        </div>
+        <hr>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" id="h" name="sexe">
+            <label class="form-check-label" for="h">Homme</label>
+        </div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" id="f" name="sexe">
+            <label class="form-check-label" for="f">Femme</label>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="form-label" for="f">Files</label>
+            <input class="form-control border-2 border-dark" type="file" id="f" name="file">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label class="form-label" for="en">Niveau</label>
+            <input class="form-range" type="range" id="en" name="niveau">
+        </div>
+        <hr>
+        <div class="form-group">
+            <label for="l" class="form-label">Pays</label>
+            <select name="list" id="l" class="form-select">
+                <optgroup label="Afrique"> 
+                    <option value="Maroc">Maroc</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Senegal">Senegal</option>
+                </optgroup>     
+                <optgroup label="Europe"> 
+                    <option value="Italy">Italy</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Turky">Turky</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ag" name="check" checked>
+            <label class="form-check-label" for="ag">I Agree</label>
+        </div>
+        <hr>
+        <button class="btn btn-success" type="submit">Valider</button>
+        <button class="btn btn-danger" type="reset">Réinitialiser</button>
+    </form>
+</div>
+
+</body>
+</html>

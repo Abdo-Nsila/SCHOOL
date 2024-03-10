@@ -1,0 +1,7 @@
+form{
+    border: 2px solid gray;
+    padding: 15px;
+}
+form div{
+    margin-bottom:10px;
+}

@@ -1,0 +1,55 @@
+*,*::afte*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 700px;
+    /* max-width: 700px; */
+    border: 3px solid black;
+    background-color: rgba(255, 217, 0, 0.473);
+    display: flex;
+    /* flex-flow: column; */
+    flex-direction: row; 
+    /* flex-wrap: wrap; */
+    justify-content:flex-start;
+    /* align-items: flex-start; no row-gab !!!!!!!!! */
+    
+
+    /* align-items:baseline; */
+
+    /* row-gap: 15px;
+    column-gap: 40px; */
+    align-content: flex-start;
+    /* gap: 15px 40px; */
+}
+
+.parent .child{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: rgb(10, 240, 244);
+}
+.child1{
+    order: 0;
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    /* flex-basis: 500px; == widht in row   and == height in column */
+    /* flex: 0 2 400px; ==  flex: grow shrink basis */
+    align-self: center;
+}
+.child2{
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.child3{
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 2;
+}

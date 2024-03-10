@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Multimédia</title>
+</head>
+
+<body>
+
+
+
+
+
+
+<!--Insertion d'image-->
+
+    <h1 class="h1"> Insertion d'image :</h1>
+
+    <div class="box">
+        <form style="z-index: 9;" class="form img">
+            <img class="home" src="home.png" height="280px" width="280px" alt="home coloré" title="Home" />
+        </form>
+    </div>
+
+    <br />
+
+    <div class="box">
+        <form style="z-index: 9;" class="form">
+            <img class="chien" src="chien.jpg" alt="chien devant tablette" title="Chien" />
+        </form>
+    </div>
+
+
+    <br />
+
+
+
+    <!--Insertion du video-->
+    <h1 class="h1">Insertion du video :</h1>
+
+    <div class="box">
+        <form>
+
+            <video class="video" controls src="nature.mp4" height="282px" width="500px">Vous devez mettre votre navigateur a jour</video>
+                <track kind="captions" 
+                src="media/nature.vtt"
+                srclang="fr"
+                label="Français"
+                default
+                >
+            </video>
+        </form>
+    </div>
+
+
+
+<!--Insertion d'audio -->
+
+    <h1 class="h1">Insertion d'audio :</h1>
+
+    <section class="s1 box">
+        <form class="form">
+            <div style="z-index: 9;" class="div2">
+
+                <audio style="z-index: 10;" src="music.mp3" controls>
+                    <source src="media/music.mp3" type="audio/mpeg">
+			        <source src="media/music.wav" type="audio/wav">
+			        <source src="media/music.ogg" type="audio/ogg">
+                </audio>
+
+            </div>
+        </form>
+    </section>
+
+<footer class="footer">
+    <a href="#"><img src="facebook.png" alt="facebook" height="45px" width="45px"><br/>Facebook</a>
+    <a href="#"><img src="instagram.png" alt="instagram" height="45px" width="45px"><br/>Instagram</a>
+    <a href="#"><img src="youtube.png" alt="youtube" height="45px" width="45px"><br/>Youtube</a>
+</footer>
+
+
+</body>
+
+
+</html>

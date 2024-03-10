@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body id="id1 id2">
+
+    <div class="form-check form-switch"> 
+        <!-- <label class="form-check-label" id="l">Light mode</label> -->
+        <input class="form-check-input" onclick="mode(this)" type="checkbox"  name="" id="mySwitch">
+        <label class="form-check-label" id="d">Dark mode</label>
+    </div>
+
+    <main class="all">
+        <h1 id="text"></h1>
+    </main>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+
+        }
+        div{
+            border: 1px solid black;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        function mode(input){
+            let hello = new Audio('correct.wav') ;
+            let bye = new Audio('false.wav') ;
+
+            cond = input.checked ;    
+            const body = document.querySelector('body') ;
+            body.classList=[] ;
+            if(cond){
+                body.classList.add('bg-dark') ;
+                body.classList.add('text-white') ;
+                console.log(body.classList) ;
+                document.querySelector('#text').innerHTML = "Welcome Back Youssef 😎" ;
+                // hello.play() ;
+            }  
+            else{
+                body.classList.add('bg-white') ;
+                body.classList.add('text-dark') ;
+                console.log(body.classList) ;
+                document.querySelector('#text').innerHTML = "Godebye Youssef 😢" ;
+                // bye.play() ;
+            }  
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu"
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    height: 530px;
+    width: 470px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 8px rgb(44, 44, 125);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.header{
+    position: absolute;
+    text-align: center;
+    bottom: 400px;
+    line-height: 2;
+}
+.header h1{
+    font-size: 35px;
+}
+.header p{
+    color: gray;
+    font-size: 17px;
+}
+
+.input1,.input2{
+    position: relative;
+}
+.input1 input{
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    right: -200px;
+    /* margin-bottom: 25px; */
+    height: 50px;
+    width: 400px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 21px;
+    text-indent: 20px;
+    font-size: 17px;
+    transition: all 700ms;
+}
+.input2 input{
+    position: absolute;
+    display: block;
+    right: -200px;
+    /* margin-bottom: 25px; */
+    height: 50px;
+    width: 400px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 21px;
+    text-indent: 20px;
+    font-size: 17px;
+    transition: all 20ms;
+}
+.input1 input:hover,.input2 input:hover{
+    border: 2px solid rgb(50, 78, 255);
+}
+.input1 input:focus{
+    border: 8px solid rgb(50, 78, 255);
+}
+.link{
+    position: relative;
+    top: 80px;
+    right: 118px;
+
+}
+.link a{
+    text-decoration: none;
+    color: rgb(50, 78, 255);
+}
+
+.click{
+    position: relative;
+    top: 130px;;
+}
+.click button{
+    cursor: pointer;
+    height: 50px;
+    width: 400px;
+    border: 2px solid rgb(50, 78, 255);
+    background: rgb(50, 78, 255);
+    border-radius: 21px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+.click button:hover{
+    opacity: 0.9;
+}
+.click button:active{
+    background: rgb(0, 34, 255);
+    opacity: 0.6;
+}
+
+

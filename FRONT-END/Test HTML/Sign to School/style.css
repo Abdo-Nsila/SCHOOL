@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(202, 105, 26);
+}
+
+.img0{
+    position: absolute;
+    top: 20px;
+    left: 950px;
+}
+
+.sign{
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    height: 350px;
+    width: 800px;
+    background: rgba(255, 121, 12, 0.527);
+    border: none;
+    border-radius: 10px;
+}
+
+.title1{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(32, 32, 109);
+}
+.para{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 25px;
+    word-spacing: 5px;
+    line-height: 1.8;
+    color: rgb(50, 43, 87);
+}
+.go{
+    position: absolute;
+    top: 250px;
+    left: 240px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(32, 32, 109);
+}
+
+button{
+    position: absolute;
+    top: 320px;
+    left: 270px;
+    padding: 25px 90px;
+    border:  solid 8px white;
+    background-color: rgb(32, 32, 109);
+    color: white;
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    border: solid 8px white;
+    background-color: rgb(255, 191, 0);
+    color: rgb(0, 0, 0);
+}
+button:active{
+    opacity: 0.6;
+}
+.footer{
+    position: absolute;
+    top: 500px;
+    left: 1050px;
+}
+.group{
+    padding: 55px;
+    display:flex;
+}
+.contact{
+    text-align: center;
+}
+.g{
+    position: relative;
+    bottom: 20px;
+    right: 60px;
+}
+.link{
+    text-decoration:underline black;
+    color: black;
+}
+
+/* @media */
+/* @media all and (min-width:600px){
+   h1{
+    
+        color: rgb(11, 185, 81);
+    }
+} */

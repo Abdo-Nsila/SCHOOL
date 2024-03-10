@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Bree Serif', serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 45%;
+    border-top: 7px solid rgb(0, 255, 0);
+    border-bottom: 7px solid rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 19px;
+    transition: all 0.3s;
+}
+a:hover{
+    scale: 1.1;
+}
+
+.terrain{
+    position: relative;
+    background-image: url("./Morocco Teams/Royal\ Morocco\ logo.jpg");
+    background-position: center;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terrain img{
+    z-index: -1 !important;
+    rotate: 90deg;
+}
+.terrain div{
+    width: 110px;
+    z-index: 2 !important;
+    position: absolute;
+    color: white;
+    background-color: rgb(169, 32, 32);
+    border: 3px solid rgb(255, 247, 3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.terrain .player img{
+    rotate: 0deg;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.terrain .bouno{
+    position: absolute;
+    right: 333px;
+}
+.terrain .hakimi{
+    position: absolute;
+    top: 255px;
+    right: 550px;
+}
+.terrain .yamiq{
+    position: absolute;
+    top: 400px;
+    right: 500px;
+}
+.terrain .says{
+    position: absolute;
+    top: 555px;
+    right: 500px;
+}
+.terrain .mazraoui{
+    position: absolute;
+    top: 700px;
+    right: 550px;
+}
+.terrain .ounahi{
+    position: absolute;
+    top: 260px;
+    right: 740px;
+}
+.terrain .amrabat{
+    position: absolute;
+    right: 670px;
+}
+.terrain .amallah{
+    position: absolute;
+    top: 690px;
+    right: 740px;
+}
+.terrain .zeiach{
+    position: absolute;
+    top: 290px;
+    right: 930px;
+}
+.terrain .enssiri{
+    position: absolute;
+    right: 970px;
+}
+.terrain .boufalle{
+    position: absolute;
+    top: 670px;
+    right: 930px;
+}
+
+
+.terrain .gk{
+    animation: gk 1s linear infinite alternate;
+}
+.terrain .df{
+    animation: df 1.5s linear infinite alternate;
+}
+.terrain .mid{
+    animation: mid 2s linear infinite alternate;
+}
+.terrain .att{
+    animation: att 0.8s linear infinite alternate;
+}
+
+/* of Gardien */
+@keyframes gk {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+/* of defense */
+@keyframes df {
+    0%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+
+/* of milieu */
+@keyframes mid {
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+
+/* of attake */
+@keyframes att {
+    0%{
+        transform: translateX(-90px);
+    }
+    25%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateX(90px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label class="form-label">Note 1</label>
+                <input class="form-control" type="text" id="n1" required><br>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Note 2</label>
+                <input class="form-control" type="text" id="n2" required><br>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Note 3</label>
+                <input class="form-control" type="text" id="n3" required><br>
+            </div>
+    
+            <input class="btn btn-dark" onclick="calculer()" value="Calculer">
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <table border="2" id="table" class="text-center table table-bordered table-hover">
+            <tr>
+                <th>Note 1</th>
+                <th>Note 2</th>
+                <th>Note 3</th>
+                <th>Moyenne</th>
+                <th>Validation</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        
+        function remove(id){
+            cond = confirm("Voulez vous suuprimer !") ;
+            if (cond == true){
+                document.getElementById(id).remove() ;
+            }
+        }
+        
+        var id = 0 ;
+        function addRow(n1,n2,n3,moyenne){
+            id++ ;
+            table = document.getElementById('table') ;
+            tr = document.createElement('tr') ;
+            table.appendChild(tr) ;
+            tr.setAttribute("id",`${id}`) ;
+
+            if(moyenne>=10){
+                statut = "Valide" ;
+            }
+            else{
+                statut = "Ratrappage" ;
+            }
+            
+            info = [n1,n2,n3,moyenne,statut] ;
+            info.forEach(element => {
+                td = document.createElement('td') ;
+                td.innerHTML = element ;
+                tr.appendChild(td) ;
+            });
+            
+            // Supprimer :
+            td_rmv = document.createElement('td') ;
+            tr.appendChild(td_rmv) ;
+            rmv = document.createElement('button') ;
+            rmv.innerHTML = "Supprimer" ;
+            rmv.setAttribute("onclick",`remove(${id})`) ;
+            rmv.setAttribute("class",`btn btn-danger text-dark`) ;
+            td_rmv.appendChild(rmv) ;
+            tr.appendChild(td_rmv) ;
+
+            table.appendChild(tr) ;
+
+            if(statut == "Valide"){
+                s = document.getElementById(id).children[4] ;
+                s.setAttribute("class","bg-success") ;
+            }
+            else{
+                s = document.getElementById(id).children[4] ;
+                s.setAttribute("class","bg-danger") ;
+            }
+        }
+
+        function calculer(){
+            n1 = parseInt(document.getElementById('n1').value) ;
+            n2 = parseInt(document.getElementById('n2').value) ;
+            n3 = parseInt(document.getElementById('n3').value) ;
+
+            moyenne = (n1+n2+n3) / 3 ;
+            addRow(n1,n2,n3,moyenne) ;
+        }
+
+
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <div class="container w-100 d-flex flex-column justify-content-around align-items-center">
+
+        <h1 class="w-75">Simulation de salaire du formateur vacataire</h1>
+    
+        <form class="w-50">
+            <br>
+            <div class="form-group">
+                <label class="form-label">Nom</label>
+                <input class="form-control border border-2 border-dark" type="text" id="nom">
+            </div>
+    
+            <div class="form-group">
+                <label class="form-label">Nombre d'heure enseigner</label>
+                <input class="form-control border border-2 border-dark" type="number" id="h">
+            </div>
+    
+            <div class="form-group">
+                <label for="">Taux horaire</label>
+                <select id="t" class="form-select border border-2 border-dark">
+                    <option value="120">120</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                </select>
+            </div>
+            <br>
+        <button class="btn btn-primary" onclick="ajouter()" type="reset">Calculer le salaire</button>
+        </form>
+
+    </div><br><br>
+    
+
+
+    <div class="w-100 d-flex justify-content-center">
+        <table class="table table-bordered table-hover table-secondary w-75" id="table">
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Nombre d'heure enseigner</td>
+                    <td>Taux horaire</td>
+                    <td>Salaire brute</td>
+                    <td>Taux de l'IR</td>
+                    <td>Montant de l'IR</td>
+                    <td>Salaire nette</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+    
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function suppRow(button){
+            var row = button.parentNode.parentNode ;
+            row.parentNode.removeChild(row) ;
+        }
+
+        function verifier(){
+            var nom = document.getElementById('nom').value ; 
+            var heure = document.getElementById('h').value ;
+
+            if (nom!= "" && heure!= ""){
+                return true ;
+            }
+            else{
+                alert('Veuillez saisir tout les champs') ;                
+                return false ;
+            }
+        }
+
+        function ajouter(){
+            if(verifier()){
+                const tbody = document.getElementById('tbody') ;
+                const row = tbody.insertRow(-1) ;
+    
+                const col1 = row.insertCell(0) ;
+                const col2 = row.insertCell(1) ;
+                const col3 = row.insertCell(2) ;
+                const col4 = row.insertCell(3) ;
+                const col5 = row.insertCell(4) ;
+                const col6 = row.insertCell(5) ;
+                const col7 = row.insertCell(6) ;
+                const col8 = row.insertCell(7) ;
+        
+                var nom = document.getElementById('nom').value ; 
+                var heure = parseInt(document.getElementById('h').value) ; 
+                var horaire = parseInt(document.getElementById('t').value) ; 
+                var brute = heure * horaire ; 
+                var taux = 30 ; 
+                var montant = (taux * 0.01) * brute ; 
+                var nette = brute - montant ; 
+    
+                
+                col1.innerHTML = nom ;
+                col2.innerHTML = heure ;
+                col3.innerHTML = horaire ;
+                col4.innerHTML = brute ;
+                col5.innerHTML = taux + ' %';
+                col6.innerHTML = montant ;
+                col7.innerHTML = nette ;
+                col8.innerHTML = '<button class="btn btn-danger" onclick="suppRow(this)">Supprimer</button>' ;
+    
+                td = [...document.getElementsByTagName('td')] ;
+                console.log(td)
+                td.forEach(element => {
+                    console.log(element)
+                    element.setAttribute("class","text-center") ;
+                });
+            }
+
+        }
+    </script>
+
+</body>
+</html>

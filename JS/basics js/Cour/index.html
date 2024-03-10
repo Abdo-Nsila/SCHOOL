@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <hr>
+    <button class="btn btn-primary" onclick="rectangle()">Rectangle</button>
+    <button class="btn btn-success" onclick="carre()">Caree</button>
+    <button class="btn btn-warning" onclick="triangle()">triangle</button>
+    <button class="btn btn-danger" onclick="cercle()">Cercle</button>
+    <hr>
+
+
+    <script>
+        function rectangle(){
+            langeur = parseInt(prompt("Langeur : ")) ;
+            largeur= Number(prompt("Largeur : ")) ;
+
+            perimetre = 2*(langeur + largeur) ;
+            surface = langeur * largeur ;
+
+            alert("Le perimetre du rectangle : "+perimetre+"\n"+"La surface du rectangle : "+surface) ;
+        }
+
+        function caree(){
+            cote = parseInt(prompt("Cote : ")) ;
+
+            perimetre = cote*4 ;
+            surface = cote**2 ;
+
+            alert("Le perimetre du carree : "+perimetre+"\n"+"La surface du carree: "+surface) ;
+        }
+
+        function triangle(){
+            base = parseInt(prompt("Base: ")) ;
+            cote1 = parseInt(prompt("Cote1 : ")) ;
+            cote2 = parseInt(prompt("Cote2 : ")) ;
+            hauteur = Number(prompt("Hauteur : "))
+
+            perimetre = base + cote1 + cote2 ;
+            surface = (base * hauteur) / 2 ;
+
+            alert("Le perimetre du triangle : "+perimetre+"\n"+"La surface du triangle: "+surface) ;
+        }
+
+        function cercle(){
+            rayon = parseInt(prompt("Rayon : ")) ;
+
+            perimetre = rayon * 3.14 ;
+            surface = (rayon**2) * 3.14 ;
+
+            alert("Le perimetre du ccercle : "+perimetre+"\n"+"La surface du ccercle: "+surface) ;
+        }
+    </script>
+
+</body>
+</html>

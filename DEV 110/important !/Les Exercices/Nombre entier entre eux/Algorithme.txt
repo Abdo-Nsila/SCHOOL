@@ -1,0 +1,52 @@
+                                   < Nombre_Entier_entreeux >
+
+Fonction pgcd(x:entier, y:entier):entier faire
+Var r,x,y:entier
+Début
+|    TantQue (not(x Mod y = 0)) faire
+|    |   r <-- x Mod y
+|    |   x <-- y
+|    |   y <-- r
+|    FinTantQue
+|    returne y
+Fin
+FinFontion
+
+
+Procédure estPremierEntreEux(x:entier, y:entier) faire
+Var p,x,y:entier
+Début
+|    Si p = 1 faire
+|    |    Ecrire("Les nombres ",x,"et",y,"sont entier entre eux")
+|    Sinon
+|    |    Ecrire(" !! Les nombres ",x,"et",y,"ne sont pas entier entre eux !! ")
+|    FinSi
+Fin
+FinProcédure
+
+
+Var x,y,p:entier
+Début
+|
+|    Répéter
+|    |    Ecrire("Entrer le Nombre 1 : ")
+|    |    Lire(x)
+|    Jusqu à (x > 0)
+|        
+|    Répéter
+|    |    Ecrire("Entrer le Nombre 2  : ")
+|    |    Lire(y)
+|    Jusqu à (y > 0)
+|        
+|    Si (x > y) faire
+|    |    n1 <-- x
+|    |    n2 <-- y
+|    Sinon
+|    |    n2 <-- x
+|    |    n1 <-- y
+|    FinSi
+|
+|    p <-- pgcd(n1:entier, n2:entier)
+|    Ecrire("PGDC de (", x, " et ", y, " ) est : ", p," ")
+|    estPremierEntreEux(x:entier, y:entier)
+Fin

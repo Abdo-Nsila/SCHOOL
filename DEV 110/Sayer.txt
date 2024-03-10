@@ -1,0 +1,16 @@
+sucre = 3 boket = 360 rial
+1l hile= 460 rial
+1/4 the = 500 rial
+cazwal = 150 rial par jours
+hile moto = 500rial
+lait = 20 rial p j
+chofan = 20 rial par jours
+egs = 24 rial par j
+frommage = 40 rial par j
+pain = 100 rial par j
+legumes = 100rial p j
+Gaz bota =400 rial p j
+eau/electrecité = 1000 rial
+tide = 260 rial mois
+
+

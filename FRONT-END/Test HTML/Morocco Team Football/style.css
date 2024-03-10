@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    z-index: 2;
+    height: 20vh;
+    width: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 45%;
+    border-bottom: 4px solid rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 19px;
+    transition: all 0.3s;
+}
+nav a:hover{
+    scale: 1.1;
+}
+
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./Morocco Teams/Royal Morocco logo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+
+audio{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    nav a {
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: none;
+        border-left: 5px solid rgb(0, 255, 0);
+        border-right: 5px solid rgb(0, 255, 0);
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+    header {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,52 @@
+                                    < Produit de 2 Matrice >
+Var Tableau:matrice1[ligne,colone1]:entier
+    Tableau:matrice2[colone1,colone2]:entier
+    Tableau:Tab[ligne,colone2]:entier
+    Tableau:t[]:entier
+    num,S,i,j,k:entier
+Début
+|    Ecrire("SAISIT DE LA Matrice 1 :")
+|    Pour i de 1 à ligne faire
+|    |    t <-- []
+|    |    Ecrire("LIGNE : " + str(i+1))
+|    |    Pour j de 1 à colone1 faire
+|    |    |    Ecrire("matrice1[" ,i+1,"][",j+1,"]= ")
+|    |    |    Lire(num)
+|    |    |    t <-- num
+|    |    FinPour
+|    FinPour
+|    matrice1 <-- t
+|     
+|    Ecrire("SAISIT DE LA Matrice 2 :")
+|    Pour i de 1 à colone1 faire
+|    |    t <-- []
+|    |    Ecrire("LIGNE : " + str(i+1))
+|    |    Pour j de 1 à colone2 faire
+|    |    |    Ecrire("matrice2[" ,i+1,"][",j+1,"]= ")
+|    |    |    Lire(num)
+|    |    |    t <-- num
+|    |    FinPour
+|    FinPour
+|    matrice2 <-- t
+|
+|    Pour i de 1 à ligne faire
+|    |     t <-- []
+|    |     Pour j de 1 à colone2 faire
+|    |     |    t <-- 0
+|    |     FinPour
+|    |     Tab <-- t 
+|    FinPour
+|    
+|    Pour i de 1 à ligne :            
+|    |    Pour j de 1 à colone2 :     
+|    |    |    S = 0
+|    |    |    Pour k de 1 à colone1: 
+|    |    |    |    Tab[i,j] = S + matrice1[i,k] * matrice2[k,j]
+|    |    |    |    S = Tab[i,j]
+|    |    |    FinPour
+|    |    FinPour
+|    FinPour
+|
+|     Ecrire("Le Produit du 2 Matrices = ", Tab)
+Fin
+

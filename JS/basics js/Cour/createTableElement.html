@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <form class="w-50">
+      <br />
+      <div class="form-group">
+        <label class="form-label">Nom</label>
+        <input
+          class="form-control border border-2 border-dark"
+          type="text"
+          id="nom"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Prenom</label>
+        <input
+          class="form-control border border-2 border-dark"
+          type="text"
+          id="prenom"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">AVATAR</label>
+        <input
+          class="form-control border border-2 border-dark"
+          type="file"
+          id="avatar"
+        />
+      </div>
+      <br />
+    </form>
+
+    <button class="btn btn-primary" onclick="ajouter()">Ajouter</button>
+
+    <table class="table table-bordered table-dark" id="table">
+      <thead>
+        <tr>
+          <td>Nom</td>
+          <td>Prenom</td>
+          <td>AVATAR</td>
+          <td>Supprimer</td>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+      function suppRow(button) {
+        var row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+      }
+
+      function ajouter() {
+        const tbody = document.getElementById("tbody");
+        const row = tbody.insertRow(-1);
+
+        const col1 = row.insertCell(0);
+        const col2 = row.insertCell(1);
+        const col3 = row.insertCell(2);
+        const col4 = row.insertCell(3);
+
+        var nom = document.getElementById("nom").value;
+        var prenom = document.getElementById("prenom").value;
+
+        var image = document.getElementById("avatar").files[0];
+        var urlImg = URL.createObjectURL(image);
+        var monImage = document.createElement("img");
+        monImage.src = urlImg;
+        monImage.height = 70;
+        monImage.width = 70;
+        col3.appendChild(monImage);
+
+        col1.innerHTML = nom;
+        col2.innerHTML = prenom;
+        col4.innerHTML =
+          '<button class="btn btn-danger" onclick="suppRow(this)">Supprimer</button>';
+
+        td = [...document.getElementsByTagName("td")];
+        console.log(td);
+        td.forEach((element) => {
+          console.log(element);
+          element.setAttribute("class", "text-center");
+        });
+      }
+    </script>
+  </body>
+</html>

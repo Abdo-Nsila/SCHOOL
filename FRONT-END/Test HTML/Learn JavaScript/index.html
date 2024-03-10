@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="qts">
+            <h1>Question ?</h1>
+            <p id="question"></p>
+        </div>
+
+
+        <section class="choix">
+            <button id="result1" onclick="answer1()" class="answer answer-1"></button >
+            <button id="result2" onclick="answer2()" class="answer answer-2"></button>
+            <button id="result3" onclick="answer3()" class="answer answer-3"></button>
+            <button id="result4" onclick="answer4()" class="answer answer-4"></button>
+        </section>
+
+        <button id="statut" onclick="next_answer()">Get Started</button>
+    </div>
+    
+
+
+    <!-- <button id="demo" onclick="myFunction()">0</button> -->
+
+    <script src="main.js"></script>
+</body>
+</html>

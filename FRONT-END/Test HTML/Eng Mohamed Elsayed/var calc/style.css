@@ -1,0 +1,48 @@
+p::first-line{
+    font-family: monospace;
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+ul li::marker{
+    color: blue;
+}
+
+ul li:first-child::selection{
+    color: rgb(102, 102, 102);
+    background:rgb(244, 255, 143);
+}
+h1::after{
+    content:'Nsila';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 136, 0);
+}
+
+h1::before{
+    content:'My name is,';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(95, 226, 43);
+}
+
+:root{
+    --familyH2 : 'cookie';
+    --sizeH2 : 90px;
+    --colorH2 : rgb(193, 23, 227);
+    --weightH2 : bold; 
+    --letterH2 : 5px;
+}
+
+h2{
+    font-family: var(--familyH2,monospace);
+    font-size: calc( var(--sizeH2,30px) - 20px );
+    color: var(--colorH2,orange);
+    font-weight: var(--weightH2,200);
+    letter-spacing: var(--letterH2,10px);
+    
+}

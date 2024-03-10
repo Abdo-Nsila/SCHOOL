@@ -1,0 +1,64 @@
+
+
+body{
+    background: radial-gradient(rgb(121, 255, 201),rgb(114, 245, 164),rgb(101, 236, 204));
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+h1{
+    color: rgba(0, 0, 255, 0.4);
+}
+
+
+
+
+.bravo{
+    color: rgb(0, 0, 0);
+}
+
+
+
+div{
+    height: 80px;
+    width: 200px;
+    background-color: rgb(240, 199, 143); 
+    border: 5px solid #00ff00;
+    border-radius: 0 30px 0 30px;
+    transition: all 10s;
+}
+div:hover{
+    box-shadow: 0 0 7px 5px gray;
+    color: rgb(0, 0, 0);
+    border: 5px solid #ff0000;
+    border-radius:  30px 0 30px 0;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate 
+{
+	25%
+	{
+		transform: rotate(90deg);
+	}
+    50%
+    {
+        transform: translateX(200px);
+    }
+    75%
+    {
+        transform: rotate(-200px);
+    }
+	100%
+	{
+		transform: translateY(-200px);
+	}
+}
+
+
+#hello{
+
+    color: #ffffff;
+    
+}

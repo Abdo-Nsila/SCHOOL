@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Serif+Display&family=Montserrat:wght@100;200;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Serif+Display&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,500;1,600;1,700;1,800&family=Montserrat:wght@100;200;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* , *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+/* body{
+    
+} */
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: blue;
+    /* position: fixed; */
+}
+
+nav{
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.logo{
+    position: absolute;
+    left: 200px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 2px;
+    height: 35px;
+    width: 110px;
+    transition: all 500ms;
+}
+nav a:hover{
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+    height: 35px;
+    width: 110px;
+    color: white;
+    border-radius: 2px;
+}
+nav a:active{
+    transition: all 100ms;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+}
+nav a:last-child{
+    margin-right: 120px;
+}
+
+
+
+
+.all{
+    z-index: -999;
+    height: 1005px;
+    background-color: rgba(0, 255, 255, 0);
+}
+.intro{
+    z-index: -10;
+    position: relative;
+    height: 660px;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+}
+
+.slach{
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    width: 170px;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+.title0{
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    width: 340px;
+    background-color: transparent;
+
+}
+.title0 h1{
+    color: white;
+    font-family: serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+.text0{
+    color: white;
+    line-height: 1.5;
+    position: absolute;
+    top: 320px;
+    left: 180px;
+    width: 550px;
+    font-weight: 300;
+}
+.b1{
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    top: 415px;
+    left: 180px;
+    text-transform: uppercase;
+    height: 35px;
+    width: 125px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+.family{
+    position: absolute;
+    top: 160px;
+    right: 180px;
+}
+.left{
+    position: absolute;
+    top: 500px;
+    left: 0;
+}
+.right{
+    z-index: 1;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+
+
+
+main{
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.slach1{
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 170px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+main h2{
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: serif;
+    letter-spacing: normal;
+}
+
+
+.g1{
+    position: absolute;
+    top: 240px;
+    left: 250px;
+    width: 350px;
+}
+.g2{
+    position: absolute;
+    top: 240px;
+    left: 650px;
+    width: 350px;
+}
+.g3{
+    position: absolute;
+    top: 240px;
+    left: 1050px;
+    width: 350px;
+}
+.g1 h3,.g2 h3,.g3 h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: serif;
+}
+.g1 p,.g2 p,.g3 p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 0.6;
+}
+
+
+.info{
+    position: relative;
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    background-color: hsl(256, 26%, 20%);
+    margin-bottom: 150px;
+}
+.title1{
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    width: 380px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: normal;
+    font-family: serif;
+}
+.title1 h2{
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-family:serif;
+}
+.info img{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+.info button{
+    cursor: pointer;
+    position: absolute;
+    right: 150px;
+    top: 110px;
+    height: 35px;
+    width: 140px;
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(142, 142, 142, 0.075);
+}
+.logo1 {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+}
+
+.slach2{
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    width: 1140px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+.contact{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 210px;
+}
+.contact img{
+    margin-left: 20px;
+}
+
+.d1{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left: 180px;
+}
+.d2{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left: 480px;
+}
+.d3{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left: 780px;
+}
+.d4{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left: 1080px;
+}
+.d1 h3,.d2 h3,.d3 h3,.d4 h3{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.d1 a,.d2 a,.d3 a,.d4 a{
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}

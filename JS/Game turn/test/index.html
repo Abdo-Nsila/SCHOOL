@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="all">
+        <div class="turn"></div>
+        <div class="i"></div>
+    </div>
+    <button class="btn">Click me</button>
+
+
+    <style>
+
+    *,*::before,*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    html{
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all{
+        height: 60vh;
+        width: 100%;
+        background-color: #0ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .turn{
+        height: 300px;
+        width: 300px;
+        border-radius: 500px;
+        background-color: #60f;
+    }
+
+    .i{
+        height: 20px;
+        width: 20px;
+        background-color: #000;
+        border-top-left-radius: 100%;
+        border-bottom-left-radius: 100%;
+    }
+
+    .btn{
+        height: 30px;
+        width: 200px;
+        background-color: #ff0;
+    }
+
+    </style>
+
+</body>
+</html>

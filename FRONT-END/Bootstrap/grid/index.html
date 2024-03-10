@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box box2">E</div>
+        <div class="box">F</div>
+    </div>
+
+
+    
+    <style>
+        .row{
+            /* height: 100vh; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            gap: 5px;
+        }
+        .box{
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .box2{
+            background-color: teal;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+
+    </style>
+
+</body>
+</html>
+
+
+
+

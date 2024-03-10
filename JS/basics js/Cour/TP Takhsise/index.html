@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="">
+        <a href="">Aceuille</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+    </nav>
+
+    
+    <div class="all">
+        <form action=""class="w-50 bg-dark border border-2 border-dark d-flex flex-column justify-content-around align-items-center rounded rounded-3 p-4">
+            <div class="form-group w-75">
+                <label class="form-label text-white">Poids (en Kg)</label>
+                <input class="form-control border border-2 border-success" type="number" id="p" >
+                <p class="text-danger" id="er1"></p>
+            </div>
+
+            <div class="form-group w-75">
+                <label class="form-label text-white">Taille (en m)</label>
+                <input class="form-control border border-2 border-success" type="number" id="t">
+                <p class="text-danger" id="er2"></p>
+            </div>
+
+            <div class="form-group w-75">
+                <label class="form-label text-white">IMC</label>
+                <input class="form-control border border-2 border-success" type="text" id="imc" disabled>
+            </div>
+
+            <input type="button" class="btn btn-success w-75 m-4" onclick="calcule()" value="Calculer">
+
+            <div class="form-group w-75">
+                <label>Description</label>
+                <textarea class="form-control border border-2 border-success" id="r" cols="50" rows="5" disabled></textarea>
+            </div>
+    
+        </form>
+    </div>
+
+    <script>
+        function verifier(){
+            p = document.getElementById('p').value ;
+            t = document.getElementById('t').value ;
+            cond = true
+
+            if(p==""){
+                er1 = document.getElementById('er1') ;
+                er1.innerHTML = "Veuillez entrez votre Poids" ;
+                cond = false ;
+            }
+            else{
+                er1.innerHTML = "" ;
+            }
+            if(t==""){
+                er2 = document.getElementById('er2') ;
+                er2.innerHTML = "Veuillez entrez votre Taille" ;
+                cond = false ;
+            }
+            else{
+                er2.innerHTML = "" ;
+            }
+                return cond ;
+        }
+
+
+        function calcule(){
+            if(verifier()){
+                p = parseFloat(document.getElementById('p').value) ;
+                t = parseFloat(document.getElementById('t').value) ;
+                r = document.getElementById('imc') ;
+                text = document.getElementById('r') ;
+
+                IMC = p / (t**2) ;
+                r.value = IMC ;
+
+                if(IMC < 16.5){
+                    d = "Mini low" ;
+                }
+                else if(IMC >= 16.5 && IMC <18){
+                    d = "Low" ;
+                }
+                else if(IMC >= 18 && IMC <25){
+                    d = "Normal" ;
+                }
+                else if(IMC >= 25 && IMC <35){
+                    d = "Large" ;
+                }
+                else if(IMC > 35){
+                    d = "X Large" ;
+                }
+                text.innerHTML = d ;
+            }
+        }
+    </script>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        nav{
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(33, 33, 33, 0.966);
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+        .all{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    
+</body>
+</html>

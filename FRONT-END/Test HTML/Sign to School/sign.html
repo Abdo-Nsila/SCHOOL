@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign.css">
+    <title>Sign-IN</title>
+</head>
+<body>
+    <header>
+        <img class="img0" src="ecrire.gif" alt="" height="180px">
+        <h1>Complete This Form</h1>
+    </header>
+
+    <main>
+        <div class="step1">
+            <form action="" method="post" class="form">
+                <fieldset style="border: none;">
+                    <legend>Personelle Information :</legend><br>
+                    <label>First Name : </label><input type="text" ><br><br><br>
+                    <label>Last Name : </label><input type="text"><br><br><br><br>
+                    <label>Gmail :</label><input type="email"  placeholder="Exemple@gmail.com"   style="margin: 0 75px;"><br><br><br><br>
+                    <label>Password : </label><input type="password" placeholder=" ++ 7 Characters"    style="margin: 0 40px;"><br><br><br><br>
+                    <label>Date of birthday : </label><input type="date"      style="margin: 0 10px;"><br><br><br><br>
+                    <label> Age : </label><input type="number" min="0" max="100"      style="margin: 0 140px;"><br><br><br><br>
+                    <label>Your Photo : </label><input type="file"><br><br><br><br><br>
+                    <label>Your level education : </label><input type="range"><br><br><br><br>
+                    <label>City :</label><input type="text" list="V"      style="margin: 0 90px;"><br><br><br><br>
+                    <datalist id="V">
+                        <option></option>
+                        <option>Rabat</option>
+                        <option>Casablaca</option>
+                        <option>Marrackech</option>
+                        <option>Agadir</option>
+                        <option>Safi</option>
+                        <option>Rachidya</option>
+                        <option>Ifrane</option>
+                        <option>Ouajda</option>
+                    </datalist>
+                    <label>You favorite color</label><input type="color" style="margin: 0 80px;"><br>
+                </fieldset>
+                <div class="ok">
+                    <input type="reset" value="reset" class="button">
+                    <button><a href="next.html">Next</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 70vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.qts{
+    background-color: rgba(255, 127, 80, 0.591);
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choix{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:deepskyblue;
+    height: 50%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,70px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.choix button{
+    display: none;
+    background-color: #e6e6e6;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.choix button:hover{
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+    
+}
+
+#statut{
+    /* display: none; */
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+}

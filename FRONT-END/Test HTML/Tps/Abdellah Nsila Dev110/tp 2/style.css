@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg,cyan,blueviolet);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card{
+    width: 60%;
+    height: 80%;
+    border: 2px solid black;
+    display: flex;
+}
+
+/* .img img{
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px coral;
+    box-shadow: 0 0 10px 5px coral;
+} */
+.img , .info{
+    /* background-color: rgb(255, 164, 132); */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.info h1{
+    color: rgb(71, 0, 138);
+    font-size: 40px;
+    text-shadow: 0px 0px 20px white;
+}
+.info .des{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.info .prix{
+    color: red;
+    font-size: 25px;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.info .sold{
+    color: blue;
+    font-size: 40px;
+}
+.info button{
+    border: 2px solid rgb(255, 200, 0);
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(255, 200, 0);
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.info button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 200, 0);
+}

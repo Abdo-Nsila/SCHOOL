@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>TP Demonstrative</h1>
+
+<script>
+    nom = prompt("Entrer Votre Nom : ") ;
+    nbr_heure = prompt('Nombre d heure : ') ;
+    sal_par_h = prompt('Salaire par heure : ') ;
+
+    salaire = Number(sal_par_h) * Number(nbr_heure) ;
+    if(salaire<=3000){
+        taux = 10 ;
+        matant = salaire * 0.1 ;
+    }
+    if(salaire>3000 && salaire<6000){
+        taux = 20 ;
+        matant = salaire * 0.2 ;
+    }
+    if(salaire>=6000){
+        taux = 30 ;
+        matant = salaire * 0.3 ;
+    }
+    
+    brute = salaire - matant ; 
+    document.writeln("<h1>Bienvenue</h1>") ;
+    document.writeln(`<h1 style='color:blue;'>${nom}</h1>`) ;
+    document.writeln(`<h3 style='color:teal;'>Votre salaire : ${salaire}DH</h3>`) ;
+    document.writeln(`<h3 style='color:blueviolet;'>Le taux d'imposition : ${taux}%</h3>`) ;
+    document.writeln(`<h3 style='color:red;'>Mantant : ${matant}DH</h3>`) ;
+    document.writeln(`<h3 style='color:green;'>Le salaire brute : ${brute}DH</h3>`) ;
+    
+</script>
+
+
+</body>
+</html>

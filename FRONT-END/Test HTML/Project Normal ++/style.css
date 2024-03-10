@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:wght@100;200;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela round', sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(30, 30, 31);
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+}
+header nav .menu-logo{
+    z-index: 99;
+    position: relative;
+    top: 20px;
+    height: 50%;
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+#menu{
+    cursor: pointer;
+    position: absolute;
+    left: 25%;
+    height: 18px;
+    transition: all 400ms;
+}
+#logo{
+    position: absolute;
+    bottom: 9px;
+    left: 35%;
+    height: 40px;
+}
+
+.navbar{
+    position: relative;
+    top: 20px;
+    float: right;
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content:end;
+}
+.navbar a{
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+a:hover{
+    color: rgb(13, 149, 115);
+}
+
+/* .navbar button{
+    cursor: pointer; 
+    position: relative;
+    right: 20px;
+    bottom: 7px;
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+}
+.navbar button span{
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    width: 26px;
+    margin-left: 2px;
+    border-radius: 50%;
+    background-color: rgb(183, 181, 181);
+    transition: all 400ms;
+} */
+
+.check{
+    z-index: -555;
+    position: absolute;
+    left: 720px;
+    bottom: 20px;
+    cursor: pointer; 
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+main{
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+}
+main .img{
+    position: relative;
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+}
+main .lamp{
+    position: absolute;
+    bottom: 379px;
+    background-color: transparent;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+main .lamp img{
+    height: 400px;
+}
+
+main .light{
+    position: absolute;
+    top: 335px;
+    right: 8px;
+    background-color: transparent;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.off{
+    height: 410px;
+    opacity: 0  ;
+}
+main .article{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    background-color: transparent;
+    top: 79px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.title{
+    position: relative;
+    bottom: 70px;
+    right: 255px;
+    /* margin-bottom: 130px;
+    margin-right: 400px; */
+}
+.title h1{
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+
+.para{
+    position: relative;
+    bottom: 90px;
+    right: 120px;
+    line-height: 1.4;
+}
+.para p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.button{
+    position:absolute;
+    bottom: 280px;
+    right: 325px;
+    width: 400px;
+    background-color: transparent;
+}
+.button button{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    height: 55px;
+    width: 260px;
+    color: white;
+    background-color: rgb(11, 116, 90);
+    font-size: 17px;
+    font-weight: 500;
+    border: 3px solid rgb(11, 116, 90);
+    border-radius: 50px;
+    transition: all 700ms;
+}
+.button button:hover{
+    border: 3px solid rgb(11, 116, 90);
+    background-color: white;
+    color: rgb(11, 116, 90);
+    font-weight: 600;
+}
+
+.range{
+    position: absolute;
+    left: 1020px;
+    bottom: 50px;
+    z-index: 999;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#p1{
+    margin-right: 15px;
+}
+.cadre{
+    height: 5px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+.cadre .line{
+    height: 5px;
+    width: 50%;
+    background-color: rgb(11, 116, 90);
+    border-radius: 5px;
+}
+#p2{
+    margin-left: 15px;
+}
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1 !important;
+}

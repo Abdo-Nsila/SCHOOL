@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Ubuntu" */
+    font-family: sans-serif
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgb(249, 187, 255),rgb(107, 183, 253),rgb(90, 217, 245),rgb(0, 255, 187));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all{
+    position: relative;
+    height: 95vh;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    height: 680px;
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.header{
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    height: 180px;
+}
+.header img{
+    height: 110px;
+    
+}
+.header h1{
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif
+}
+
+.input1{
+    position: absolute;
+    top: 210px;
+}
+.input1 img{
+    z-index: 1;
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    height: 22px;
+    opacity: 0.7;
+}
+.input1 input{
+    height: 45px;
+    width: 360px;
+    border: none;
+    border-radius: 50px;
+    text-indent: 50px;
+    font-size: 15px;
+    background: rgba(222, 222, 222, 0.635);
+    opacity: 0.9;
+    transition: all 600ms;
+}
+.input1 input:focus{
+    background: white;
+    border: none;
+    border-color: white;
+    
+}
+.input1 img:focus{
+    opacity: 1;
+}
+
+.input2{
+    position: absolute;
+    top: 285px;
+}
+.input2 img{
+    z-index: 1;
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    height: 22px;
+    opacity: 0.6;
+}
+.input2 input{
+    height: 45px;
+    width: 360px;
+    border: none;
+    border-radius: 50px;
+    text-indent: 50px;
+    font-size: 15px;
+    background: rgba(222, 222, 222, 0.635);
+    opacity: 0.9;
+    transition: all 600ms;
+}
+.input2 input:focus{
+    background: white;
+}
+
+.check{
+    position: absolute;
+    top: 350px;
+    left: 53px;
+}
+.check label{
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forgot{
+    position: absolute;
+    right: 30px;
+    top: 348px;
+}
+.forgot a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(38, 38, 252);
+}
+
+.login{
+    width: 100%;
+    background-color: #ff0;
+    /* transition: all 0.5s; */
+    position: absolute;
+    top: 405px;
+}
+.login button{
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width:100px;
+    border: 3px solid black;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 100ms;
+}
+.login button:hover{
+    color: black;
+    background: white;
+}
+.login button:active{
+    transition: none;
+    opacity: 0.5;
+}
+
+.help{
+    position: absolute;
+    top: 475px;
+}
+.help p{
+    font-size: 15px;
+    display: inline;
+}
+.help a{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(38, 38, 252);
+}
+
+.more{
+    position: absolute;
+    top: 514px;
+}
+.more p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(63, 63, 63, 0.845);
+    word-spacing: 2px;
+}
+
+.chose{
+    position: absolute;
+    top: 565px;
+}
+.chose .b1{
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 50px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    margin-right: 15px;
+    transition: all 800ms;
+}
+.chose .b2{
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 50px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    margin-right: 15px;
+    transition: all 800ms;
+}
+.chose .b3{
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 50px;
+    background-image: url(twitter.png);
+    background-size: cover;
+    transition: all 800ms;
+}
+
+.b1:hover,.b2:hover,.b3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px 2px rgb(163, 163, 163);
+}
+
+
+
+/* !!!!   IMPORTENT   !!!! */
+/* media query
+flex-box
+css grid
+bootstrap */
+
+@media (max-width: 620px){
+
+    .all{
+        position: relative;
+        height: 95vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container{
+        position: relative;
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.788);
+    }
+    
+    .header{
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        height: 180px;
+    }
+    .header img{
+        height: 95px;
+        
+    }
+    .header h1{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: sans-serif
+    }
+
+    .input1 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.7;
+    }
+    .input1 input{
+        height: 55px;
+        width: 270px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 14px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+    
+
+    .input2 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.6;
+    }
+    .input2 input{
+        height: 55px;
+        width: 270px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 15px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+
+    .check{
+        position: absolute;
+        top: 360px;
+        left: 110px;
+    }
+    .check label{
+        position: relative;
+        bottom: 2px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .forgot{
+        position: absolute;
+        right: 98px;
+        top: 358px;
+    }
+    .forgot a{
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(38, 38, 252);
+    }
+
+    .login{
+        position: absolute;
+        top: 405px;
+    }
+    .login button{
+        cursor: pointer;
+        height: 60px;
+        width:260px;
+        border: 3px solid black;
+        background: black;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 800ms;
+    }
+
+    .help{
+        position: absolute;
+        top: 485px;
+    }
+    .help p{
+        font-size: 14px;
+        display: inline;
+    }
+    .help a{
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(38, 38, 252);
+    }
+
+    .more{
+        position: absolute;
+        top: 520px;
+    }
+    .more p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(63, 63, 63, 0.845);
+        word-spacing: 2px;
+    }
+
+    .chose{
+        position: absolute;
+        top: 560px;
+    }
+    .chose .b1{
+        cursor: pointer;
+        height: 44px;
+        width: 44px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(facebook.png);
+        background-size: cover;
+        margin-right: 15px;
+        transition: all 800ms;
+    }
+    .chose .b2{
+        cursor: pointer;
+        height: 44px;
+        width: 44px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(instagram.png);
+        background-size: cover;
+        margin-right: 15px;
+        transition: all 800ms;
+    }
+    .chose .b3{
+        cursor: pointer;
+        height: 44px;
+        width: 44px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(twitter.png);
+        background-size: cover;
+        transition: all 800ms;
+    }
+    
+    .b1:hover,.b2:hover,.b3:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px 2px rgb(163, 163, 163);
+    }
+    
+}
+
+
+
+
+@media (max-width: 440px){
+
+    .header{
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        height: 180px;
+    }
+    .header img{
+        height: 95px;
+        
+    }
+    .header h1{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: sans-serif
+    }
+
+    .input1 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.7;
+    }
+    .input1 input{
+        height: 55px;
+        width: 270px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 14px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+    
+
+    .input2 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.6;
+    }
+    .input2 input{
+        height: 55px;
+        width: 270px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 15px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+
+    .check{
+        position: absolute;
+        top: 360px;
+        left: 0px;
+    }
+    .check label{
+        position: relative;
+        bottom: 2px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .forgot{
+        position: absolute;
+        left: 0px;
+        text-align: start;
+        /* left: 150px; */
+        top: 380px;
+    }
+    .forgot a{
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(38, 38, 252);
+    }
+
+    .login{
+        position: absolute;
+        top: 405px;
+    }
+    .login button{
+        cursor: pointer;
+        height: 60px;
+        width:260px;
+        border: 3px solid black;
+        background: black;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 800ms;
+    }
+
+    .help{
+        position: absolute;
+        left: 0;
+        top: 490px;
+    }
+    .help p{
+        font-size: 14px;
+        display: inline;
+    }
+    .help a{
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(38, 38, 252);
+    }
+
+    .more{
+        position: absolute;
+        top: 530px;
+    }
+    .more p{
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(63, 63, 63, 0.845);
+        word-spacing: 2px;
+    }
+
+
+    .chose{
+        position: absolute;
+        top: 560px;
+    }
+    .chose .b1{
+        cursor: pointer;
+        height: 38px;
+        width: 38px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(facebook.png);
+        background-size: cover;
+        margin-right: 2px;
+        transition: all 800ms;
+    }
+    .chose .b2{
+        cursor: pointer;
+        height: 38px;
+        width: 38px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(instagram.png);
+        background-size: cover;
+        margin-right: 2px;
+        transition: all 800ms;
+    }
+    .chose .b3{
+        cursor: pointer;
+        height: 38px;
+        width: 38px;
+        border: none;
+        border-radius: 50px;
+        background-image: url(twitter.png);
+        background-size: cover;
+        transition: all 800ms;
+    }
+    
+    .b1:hover,.b2:hover,.b3:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 6px 8px 2px rgb(163, 163, 163);
+    }
+}
+
+@media (max-width: 260px){
+    .input1 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.7;
+    }
+    .input1 input{
+        height: 55px;
+        width: 180px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 14px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+    
+
+    .input2 img{
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        height: 20px;
+        opacity: 0.6;
+    }
+    .input2 input{
+        height: 55px;
+        width: 180px;
+        border: none;
+        border-radius: 10px;
+        text-indent: 50px;
+        font-size: 15px;
+        background: rgba(222, 222, 222, 0.635);
+        opacity: 0.9;
+        transition: all 600ms;
+    }
+
+    .check{
+        position: absolute;
+        top: 360px;
+        left: 0px;
+    }
+    .check label{
+        position: relative;
+        bottom: 2px;
+        margin-left: 10px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .forgot{
+        position: absolute;
+        left: 0px;
+        text-align: start;
+        /* left: 150px; */
+        top: 380px;
+    }
+    .forgot a{
+        text-decoration: none;
+        font-size: 10px;
+        color: rgb(38, 38, 252);
+    }
+
+    .login{
+        position: absolute;
+        top: 405px;
+    }
+    .login button{
+        cursor: pointer;
+        height: 60px;
+        width:180px;
+        border: 3px solid black;
+        background: black;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 800ms;
+    }
+
+    .help{
+        position: absolute;
+        left: 0;
+        top: 490px;
+    }
+    .help p{
+        font-size: 9px;
+        display: inline;
+    }
+    .help a{
+        font-size: 9px;
+        text-decoration: none;
+        color: rgb(38, 38, 252);
+    }
+}

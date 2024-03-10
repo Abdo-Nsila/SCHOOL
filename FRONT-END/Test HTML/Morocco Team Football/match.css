@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 20px;
+}
+
+header{
+    height: 200px;
+    background-color: #811538;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    border-bottom: solid 25px #600623;
+    background-image: url("./Morocco Teams/pattern.png");
+    text-align: center;
+    color: white;
+    padding:50px 0 0 400px;
+}
+header h1{
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.logo{
+    position: absolute;
+    z-index: 999;
+    left: 120px;
+    top: 60px;
+}
+.logo-img{
+    height: 200px;
+    -webkit-filter: drop-shadow(0px 5px 30px #000000ce);
+    filter: drop-shadow(0px 5px 30px #000000ce);
+}
+
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qatar{
+    margin-top: 60px;
+    width: 350px;
+}
+
+.matchs{
+    margin-right: 20px;
+    direction: rtl;
+    font-size: 40px;
+}
+
+
+.all{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    background-image: url("./Morocco Teams/pattern.png");
+}
+
+.all img{
+    margin: auto;
+    width: 80%;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+.all img:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px 5px gray;
+    box-shadow: 0 0 10px 5px gray;
+    box-shadow: 0 0 15px 5x gray;
+    box-shadow: 0 0 20px 5x gray;
+
+}
+
+a{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 45%;
+    border-top: 7px solid rgb(0, 255, 0);
+    border-bottom: 7px solid rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 19px;
+    transition: all 0.3s;
+}
+a:hover{
+    scale: 1.1;
+}

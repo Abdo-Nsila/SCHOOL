@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics JS</title>
+  </head>
+  <body>
+
+
+    <script>
+
+    // let a = "I love";
+    // let b = "JavaScript";
+    // document.write(`${a} ${b}`);
+    // console.log(a, b) ;
+
+
+    // let name = "Abdellah" ;
+    // let = navBar = 
+    // `<nav style="height:200px; width:100%; display:flex; justify-content:space-between; align-items:center; ">
+    //     <h1 height:100%; width:40%; >${name}</h1>
+    //     <div style="height:100%; width:60%;  display:flex; justify-content:space-evenly; align-items:center;">
+    //         <a href="#" style="text-decoration:none; color:blueviolet; ">Home</a>
+    //         <a href="#" style="text-decoration:none; color:blueviolet; ">Services</a>
+    //         <a href="#" style="text-decoration:none; color:blueviolet; ">Contact us</a>
+    //         <a href="#" style="text-decoration:none; color:blueviolet; ">About</a>
+    //     </div>
+    // </nav>` ;
+
+    // document.write(navBar) ;
+
+
+    // var titleName="Elzero" , descContent="Elzero Web School" , dateContent="25/10" ;
+    
+    // let card = `
+    //     <div class="card">
+    //         <h3>Hello ${titleName}</h3>
+    //         <p>${descContent}</p>
+    //         <span>${dateContent}</span>
+    //     </div>
+    //     <hr>` ;
+    // document.write(card.repeat(4));
+    
+
+    // console.log(+"100");
+    // console.log(+"-100");
+    // console.log(-"100");
+    // console.log(-"-100");
+
+    a = 10 ;
+    b = "20" ;
+    c = 80 ;
+    console.log(++a + +b++ + +c++ - +a++) ;
+    console.log(++a + -b + +c++ - -a++ + +a) ;
+    console.log(--c + +b + --a * +b++ - +b * a + --a - +true) ;
+
+    d = "-100";
+    e = "20";
+    f = 30;
+    g = true;
+    console.log(-d * +e);
+    console.log(++e * ++g + ++f + -d);
+    
+
+    // Numbers :
+    console.log(1_000_000) ;
+    console.log(1e6) ;
+    console.log(Number.MAX_SAFE_INTEGER) ;
+    console.log(Number.MAX_VALUE) ;
+    // Numbers Methods :  
+    console.log((50).toString()) ; // => console.log(50..toString()) ; => console.log(50.10.toString()) ;
+    console.log((50.123).toFixed(2)) ;
+    console.log(parseInt("100")) ; // => console.log(parseInt("100 moto")) ;
+    console.log(parseFloat("100.55")) ; // => console.log(parseFloat("100.55 DH")) ;
+    console.log(Number.isInteger("200")) ;
+    console.log(Number.isInteger(200)) ;
+
+    console.log(Math.round(99.2)) ;
+    console.log(Math.round(99.5)) ;
+    console.log(Math.ceil(99.1)) ;
+    console.log(Math.floor(99.9)) ;
+    console.log(Math.trunc(77.25)) ;
+    console.log(Math.random()) ;
+    console.log(Math.pow(2,4)) ;
+
+    a = 1_00 ;
+    b = 2_00.5
+    d = 2.4 ;
+    console.log(Math.pow(a,Math.trunc(d))) ;
+    
+     console.log(Math.floor(d)) ;
+     console.log(Math.trunc(d)) ;
+     console.log(parseInt(d)) ;
+     console.log(Number(d.toFixed(0))) ;
+     
+    console.log() // 66.67 => String
+    console.log() // 67 => Number
+
+
+    </script>
+
+  </body>
+</html>

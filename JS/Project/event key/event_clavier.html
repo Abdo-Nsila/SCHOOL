@@ -1,0 +1,54 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Événements de clavier</title>
+  </head>
+  <body>
+    <h1>Appuyez sur les touches A, S ou D pour changer la couleur de fond</h1>
+    <script>
+      document.addEventListener('keydown', function(event) {
+        if (event.key === "a") {
+          document.body.style.backgroundColor = "red";
+        } else if (event.key === "s") {
+          document.body.style.backgroundColor = "green";
+        } else if (event.key === "d") {
+          document.body.style.backgroundColor = "blue";
+        }
+      });
+    </script>
+  </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exemple d'événements de clavier en JavaScript</title>
+  </head>
+  <body>
+    <h1>Exemple d'événements de clavier en JavaScript</h1>
+    <p>Appuyez sur une touche de clavier pour voir la différence entre les événements.</p>
+    <ul>
+      <li>Keypress : </li>
+      <li>Keydown : </li>
+      <li>Keyup : </li>
+    </ul>
+    <script>
+      var keypressOutput = document.querySelector('ul li:nth-of-type(1)');
+      var keydownOutput = document.querySelector('ul li:nth-of-type(2)');
+      var keyupOutput = document.querySelector('ul li:nth-of-type(3)');
+      
+      document.addEventListener('keypress', function(event) {
+        keypressOutput.textContent += event.key;
+      });
+      
+      document.addEventListener('keydown', function(event) {
+        keydownOutput.textContent += event.key;
+      });
+      
+      document.addEventListener('keyup', function(event) {
+        keyupOutput.textContent += event.key;
+      });
+    </script>
+  </body>
+</html>

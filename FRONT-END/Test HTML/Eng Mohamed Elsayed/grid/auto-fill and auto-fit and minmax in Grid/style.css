@@ -1,0 +1,29 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px,150px));
+    gap: 10px;
+    margin: 20px;
+    padding: 5px;
+    border: 2px dashed white;
+}
+
+.child{
+    height: 150px;
+    background-color: orange;
+    text-align: center;
+}
+
+.child-1{
+    /* grid-column: 1/-1; */
+}

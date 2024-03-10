@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+      
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label class="form-label">Nom</label>
+                <input class="form-control" type="text" id="nom" required><br>
+    
+            </div>
+            <div class="form-group">
+                <label class="form-label">Prenom</label>
+                <input class="form-control" type="text" id="prenom" required><br>
+    
+            </div>
+            <div class="form-group">
+                <select id= "group">
+                    <option value="DEV101">DEV101</option>
+                    <option value="DEV102">DEV102</option>
+                    <option value="DEV103">DEV103</option>
+                    <option value="DEV104">DEV104</option>
+                    <option value="DEV105">DEV105</option>
+                    <option value="DEV106">DEV106</option>
+                    <option value="DEV107">DEV107</option>
+                    <option value="DEV108">DEV108</option>
+                    <option value="DEV109">DEV109</option>
+                    <option value="DEV110">DEV110</option>
+                </select>
+            </div><br>
+    
+            <input class="btn btn-dark" onclick="addRow()" value="Add Row">
+        </form>
+
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <table border="2" id="table" class="text-center table table-bordered table-hover">
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>groupe</th>
+                <th>Modifier</th>
+                <th><button class="btn btn-danger" onclick="removeAll()">Supprimer</button></th>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+    <script>
+
+        var tab_stg = [] ;
+
+        function removeAll(){
+            nbr_child = document.getElementById('table').childElementCount ;
+            console.log(nbr_child) ;
+            child = document.getElementById('table').getElementsByTagName('tr');
+            console.log(child) ;
+            for (let k in child) {
+                if (k != 0){
+                    console.log(k, child[k]);
+                    document.getElementById(k).remove() ;
+                }
+            }
+        }
+
+        function modify(id){
+            var nom = prompt("Entrer Nom:") ;
+            var prenom = prompt("Entrer Prenom:") ;
+            var groupe = prompt("Entrer Groupe:") ;
+            var info = [nom,prenom,groupe] ;
+            tab_stg[id] = info ;
+            for(i=0 ; i<3 ; i++){
+                child = document.getElementById(id).children[i] ;
+                child.innerHTML = info[i] ;
+            }
+        }
+
+        function remove(id){
+            cond = confirm("Voulez vous suuprimer !") ;
+            if (cond == true){
+                document.getElementById(id).remove() ;
+            }
+        }
+
+        var id = 0 ;
+        function saisir(tr){
+            id++ ;
+            tr.setAttribute("id",`${id}`) ;
+            var nom = document.getElementById('nom').value ;
+            var prenom = document.getElementById('prenom').value ;
+            var groupe = document.getElementById('group').value ;
+            var info = [nom,prenom,groupe] ;
+            tab_stg.push(info) ;
+            info.forEach(element => {
+                td = document.createElement('td') ;
+                td.innerHTML = element ;
+                tr.appendChild(td) ;
+            });
+
+            // Modifier :
+            td_mdf = document.createElement('td') ;
+            tr.appendChild(td_mdf) ;
+            mdf = document.createElement('button') ;
+            mdf.innerHTML = "Modifier" ;
+            mdf.setAttribute("onclick",`modify(${id})`) ;
+            mdf.setAttribute("class",`btn btn-warning`) ;
+            td_mdf.appendChild(mdf) ;
+            tr.appendChild(td_mdf) ;
+
+            // Supprimer :
+            td_rmv = document.createElement('td') ;
+            tr.appendChild(td_rmv) ;
+            rmv = document.createElement('button') ;
+            rmv.innerHTML = "Supprimer" ;
+            rmv.setAttribute("onclick",`remove(${id})`) ;
+            rmv.setAttribute("class",`btn btn-danger text-dark`) ;
+            td_rmv.appendChild(rmv) ;
+            tr.appendChild(td_rmv) ;
+
+        }
+
+        function addRow(){
+            table = document.getElementById('table') ;
+            tr = document.createElement('tr') ;
+
+            table.appendChild(tr) ;
+            saisir(tr) ;
+            table.appendChild(tr) ;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Images Scraper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>YouTube Images Scraper</h1>
+    <p>Enter YouTube Video ID (end of the url, f.e. <a id="dummyid" href="https://youtube.com/watch?v=dQw4w9WgXcQ">dQw4w9WgXcQ</a>) and get all available thumbnails.</p>
+
+    <form>
+        <label for="video_id">Youtube Video ID:</label>
+        <input type="text" id="video_id" placeholder="YouTube Video ID, f.e. dQw4w9WgXcQ">
+        <input type="checkbox" id="webp"><label for="webp">WebP images</label>    
+        <input type="submit" value="Give me images!">
+    </form>
+    <div id="results"></div>
+    <script src="youtube-images.js"> 
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(#000,#0f0,#000); */
+    background: black;
+}
+
+body::before {
+    content: '';
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    50% {
+        transforme: translateY(-100%);
+    }
+
+    100% {
+        transforme: translateY(100%);
+    }
+}
+
+.container {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 3px 3px;
+    overflow: hidden;
+}
+
+.careau1,
+.careau2 {
+    border: 2px solid black;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(52, 52, 65);
+    transition: 50s;
+    border: none;
+    border-radius: 10px;
+}
+
+.careau1:hover {
+    transition: 0s;
+    border: none;
+    background-color: white;
+}
+
+.careau2:hover {
+    transition: 0s;
+    border: none;
+    background-color: black;
+
+}

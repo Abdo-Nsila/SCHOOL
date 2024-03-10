@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+}
+body{
+    height: 200vh;
+    width: 100%;
+}
+
+.header{
+    height: 200px;
+    background-color: #811538;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    border-bottom: solid 25px #600623;
+    background-image: url(pattern.png);
+}
+
+.logo{
+    position: absolute;
+    z-index: 999;
+    left: 120px;
+    top: 60px;
+}
+.logo-img{
+    height: 200px;
+    -webkit-filter: drop-shadow(0px 5px 30px #000000ce);
+    filter: drop-shadow(0px 5px 30px #000000ce);
+}
+
+.text{
+    position: absolute;
+    height: 80%;
+    left: 1320px;
+    color: white;
+    margin-bottom: 20px;
+}
+.h11{
+    font-size: 40px;
+    font-weight: 600;
+}
+.h12{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qatar{
+    margin-top: 60px;
+    width: 350px;
+}
+
+
+
+.container{
+    margin:  auto;
+    margin-top: 80px;
+    width: 70%;
+}
+.groupe{
+    direction: rtl;
+    font-size: 15px;
+}

@@ -1,0 +1,87 @@
+/*                                    HOME                            */
+.img{
+    position: relative;
+    left: 120px;
+    top: 15px;
+}
+.ul{
+    position: relative;
+    list-style: none;
+    
+}
+
+.Home{
+    font-size: 10px;
+    position: relative;
+    bottom: 38px;
+    left: 86px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav{
+    position: relative;
+    right: 120px;
+    height: 0px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.list{
+    list-style: none;
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+    top: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+.l{
+    border-radius:  8px 8px 0px 0px;
+}
+.l,.l1,.l2,.l3{
+    cursor:default;
+    border: solid 1.6px black;
+    border-bottom: white;
+    padding: 20px 114px ;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: all 300ms;
+
+}
+.l:hover,.l1:hover,.l2:hover,.l3:hover{
+    cursor: pointer;
+    border: solid 1.6px black;
+    padding: 20px 114px ;
+    background-color: black;
+    color: white;
+    
+}
+.l:active,.l1:active,.l2:active,.l3:active{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 100ms;
+}
+.l3{
+    cursor:default;
+    border: solid 1.6px black;
+    padding: 20px 114px ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 8px 8px;
+    
+}
+
+/*                                          Product                                   */
+
+/*                                          Contact                                   */
+
+/*                                          About                                     */

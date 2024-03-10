@@ -1,0 +1,127 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-radius: 7px;
+}
+html{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-0 : rgba(255, 255, 255, 0.200);
+    --color-1 : rgba(255, 255, 255, 0.258);
+}
+
+
+.all{
+    margin:5vh auto;
+    padding: 5px;
+    height: 90vh;
+    width: 80%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(8,12%);
+    gap: 4px 4px;
+    /* transition: all 0.3s; */
+    box-shadow: 0 0 7px 3px rgb(87, 87, 87);
+    /* animation: animate 3s linear infinite;
+    animation-duration: 10s;*/
+} 
+/* @keyframes animate 
+{
+	25%
+	{
+		scale: 1.1;
+	}
+	50%
+	{
+		scale: 1;
+	}
+	25%
+	{
+		scale: 1.1;
+	}
+	50%
+	{
+		scale: 1;
+	}
+} */
+/* .all:hover{
+    transform: scale(1.01);
+} */
+
+.child{
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.child:active{
+    opacity: 0.8;
+}
+
+.child-0{
+    color: white;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    grid-column: span 4;
+    grid-row: span 2;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    padding: 0 1%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.color-0{
+    background-color: var(--color-0);
+}
+.color-0:hover{
+    background-color: var(--color-1);
+}
+
+
+
+
+.color-1{
+    background-color: var(--color-1);
+    
+}
+.color-1:hover{
+    background-color: var(--color-0);
+    
+}
+.color-1:active{
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+
+
+.color-2{
+    background-color: #7ec2fd;
+    color: black;
+    
+}
+.color-2:hover{
+    opacity: 0.9;
+}
+.color-2:active{
+    opacity: 0.8;
+}
+
+.child-8,.child-12,.child-16,.child-20,.child-24{
+    font-size: 30px;
+}
+.child-21,.child-22,.child-23,.child-24{
+    margin-bottom: 5px;
+}
