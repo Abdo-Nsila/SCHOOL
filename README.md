@@ -1,3 +1,3 @@
->[yellow] # My SCHOOL Files
-> ``Keep Learning``
+> [!NOTE]\
+> Keep Learning
 
